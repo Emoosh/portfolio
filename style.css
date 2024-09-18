@@ -2,6 +2,55 @@ html {
   scroll-behavior: smooth;
 }
 
+
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 1.5rem; 
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .lead_font {
+    font-size: 1rem;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Hafif aşağıdan başlayarak */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Normal konumuna */
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Başlangıç pozisyonu */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0); /* Normal konumuna gelir */
+}
+
+
+
+
 .indie-flower-regular {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
